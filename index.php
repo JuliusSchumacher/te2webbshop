@@ -23,7 +23,7 @@ $DBH = null;
 
 // Hämtar värden
 $results = $STH->fetchAll();
-print_r($results);
+//print_r($results);
 ?>
 
 <!DOCTYPE html>
@@ -33,6 +33,16 @@ print_r($results);
     <title></title>
 </head>
 <body>
+<?php
+    foreach($results as $product){
+        ?>
+        <a href="produkt.php?produktid=<?php echo $product["id"]; ?>">
+            <img src="<?php echo $product["bildfil"]?>" height="100" width="100">
+            <?php echo $product["titel"]; ?></a><br>
+        <?php
+    }
+?>
+
 
 </body>
 </html>
