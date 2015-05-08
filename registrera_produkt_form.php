@@ -7,7 +7,7 @@
 <body>
 <h1>Registrera ny produkt</h1><br><br>
 
-<form action=".php" method="post">
+<form action="registrera_produkt.php" method="post">
     Titel <input type="text" name="titel"><br><br>
     Beskrivning <input type="text" name="beskrivning"><br><br>
     Pris <input type="text" name="pris"><br><br>
